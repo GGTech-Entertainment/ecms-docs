@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecms-docs
+spec:
+  selector:
+    matchLabels:
+      app: ecms-docs
+  template:
+    metadata:
+      labels:
+        app: ecms-docs
+    spec:
+      containers:
+      - name: ecms-docs
+        image: git.ggtech.global:5050/ggtech/esports-cms/ecms-docs
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
+      imagePullSecrets:
+        - name: regcred
