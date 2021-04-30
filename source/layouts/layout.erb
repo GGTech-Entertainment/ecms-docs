@@ -22,6 +22,9 @@ under the License.
     end
   end
 %>
+<%
+  pages_list = YAML.load(partial('pages.yml'))['pages']
+%>
 
 <!doctype html>
 <html>
@@ -59,7 +62,6 @@ under the License.
   <body class="<%= page_classes %>" data-languages="<%=h language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>">
     <a href="#" id="nav-button">
       <span>
-        NAV
         <%= image_tag('navbar.png') %>
       </span>
     </a>
@@ -85,16 +87,16 @@ under the License.
         <ul class="search-results"></ul>
       <% end %>
       <br/>
-      <% if current_page.data.pages %>
+      <% if pages_list %>
         <fieldset class="toc-list-page">
           <legend>
             Pages
           </legend>
           <ul id="pages" class="toc-list-h1">
-            <% current_page.data.pages.each do |page| %>
+            <% pages_list.each do |page| %>
               <li>
-                <a id="<%= page %>-page" href="<%= page %>.html" class="toc-h1 toc-link capitalize" data-page="<%= page %>">
-                  <%= page %>
+                <a id="<%= page['page'].gsub('.html', '') %>-page" href="<%= page['page'] %>" class="toc-h1 toc-link capitalize <% if page['disabled'] %>disabled<% end %>" data-page="<%= page['name'] %>">
+                  <%= page['name'] %>
                 </a>
               </li>
             <% end %>
