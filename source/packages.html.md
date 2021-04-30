@@ -1,11 +1,10 @@
 ---
-title: API Reference A
+title: Packages Doc
 
 toc_footers:
   - copyright <a href="https://www.ggtech.global" target="_blank">GGTech</a> 2021 ©
 
 includes:
-  - admin
   - packages/database
   - packages/utils
 
@@ -21,3 +20,7 @@ code_clipboard: true
 
 # Introduction
 
+Documentation for packages created for ECMS system
+
+* [Database](#database-package)
+* [Utils](#utils-package)

@@ -1,0 +1,21 @@
+.capitalize {
+  text-transform: capitalize;
+}
+
+.toc-list-page {
+  border-top: 1px dashed $nav-footer-border-color;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding: 0 0 0 0;
+
+  legend {
+    color: white;
+    padding: 0 5px;
+  }
+}
+
+.active-page {
+  background-color: #0fb9d4;
+  color: white;
+}

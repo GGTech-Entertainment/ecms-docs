@@ -30,6 +30,17 @@
     var windowHeight = 0;
     var originalTitle = document.title;
 
+    var pathname = location.pathname
+
+    console.log(pathname)
+
+    if (!['/', '/index'].includes(pathname)) {
+      pathname = pathname.replace('/', '')
+      pathname = pathname.replace('.html', '')
+
+      $(`#${pathname}-page`).addClass('active-page')
+    }
+
     var recacheHeights = function() {
       headerHeights = {};
       pageHeight = $(document).height();
