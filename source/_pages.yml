@@ -1,0 +1,10 @@
+pages:
+  - name: Admin
+    page: admin.html
+  - name: Backend
+    page: backend.html
+  - name: Packages
+    page: packages.html
+  - name: API
+    page: api.htl
+    disabled: true
