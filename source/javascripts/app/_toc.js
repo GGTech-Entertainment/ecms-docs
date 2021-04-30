@@ -38,7 +38,7 @@
       pathname = pathname.replace('/', '')
       pathname = pathname.replace('.html', '')
 
-      $(`#${pathname}-page`).addClass('active-page')
+      $('#'+ pathname + 'page`').addClass('active-page')
     }
 
     var recacheHeights = function() {
