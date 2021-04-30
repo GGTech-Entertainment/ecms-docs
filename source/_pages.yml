@@ -1,4 +1,6 @@
 pages:
+  - name: Home
+    page: index.html
   - name: Admin
     page: admin.html
   - name: Backend
