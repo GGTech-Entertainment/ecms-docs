@@ -1,4 +1,4 @@
-# Database
+# Database package
 
 ECMS package to centralize database project models
 
