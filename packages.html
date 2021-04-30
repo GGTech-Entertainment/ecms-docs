@@ -6,7 +6,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="images/favicon-a68a6ad6.ico" rel="icon" type="image/ico" />
-    <title>API Reference A</title>
+    <title>Packages Doc</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -292,7 +292,7 @@
     </script>
   </head>
 
-  <body class="index" data-languages="[]">
+  <body class="packages" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -340,35 +340,6 @@
               <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
             </li>
             <li>
-              <a href="#admin-gts" class="toc-h1 toc-link" data-title="Admin GTS"><strong>Admin GTS</strong></a>
-                <ul class="toc-list-h2">
-                    <li>
-                      <a href="#quick-guide" class="toc-h2 toc-link" data-title="Quick guide"><strong>Quick guide</strong></a>
-                    </li>
-                    <li>
-                      <a href="#table-of-contents" class="toc-h2 toc-link" data-title="Table of contents"><strong>Table of contents</strong></a>
-                    </li>
-                    <li>
-                      <a href="#intro" class="toc-h2 toc-link" data-title="Intro "><strong>Intro</strong> <span id="intro"></span></a>
-                    </li>
-                    <li>
-                      <a href="#project-setup" class="toc-h2 toc-link" data-title="Project setup "><strong>Project setup</strong> <span id="project-setup"></span></a>
-                    </li>
-                    <li>
-                      <a href="#project-structure" class="toc-h2 toc-link" data-title="Project structure "><strong>Project structure</strong> <span id="project-structure"></span></a>
-                    </li>
-                    <li>
-                      <a href="#libraries" class="toc-h2 toc-link" data-title="Libraries "><strong>Libraries</strong> <span id="libraries"></span></a>
-                    </li>
-                    <li>
-                      <a href="#best-practices" class="toc-h2 toc-link" data-title="Best Practices "><strong>Best Practices</strong> <span id="best-practices"></span></a>
-                    </li>
-                    <li>
-                      <a href="#technical-debts" class="toc-h2 toc-link" data-title="Technical Debts "><strong>Technical Debts</strong> <span id="technical-debts"></span></a>
-                    </li>
-                </ul>
-            </li>
-            <li>
               <a href="#database-package" class="toc-h1 toc-link" data-title="Database package">Database package</a>
                 <ul class="toc-list-h2">
                     <li>
@@ -400,159 +371,13 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1><h1 id='admin-gts'><strong>Admin GTS</strong></h1><h2 id='quick-guide'><strong>Quick guide</strong></h2>
-<p>Checkout <strong><a href="#project-setup">project setup</a></strong> for a quick dive into the project.
-Checkout <strong><a href="#project-structure">project structure</a></strong>, <strong><a href="#libraries">libraries</a></strong> and <strong><a href="#best-practices">best practices</a></strong> for a better understanding of the project
-<strong><a href="#technical-debts">Technical debts</a></strong> section is intended to list <strong>quick fixes or components that need code improvements</strong></p>
+        <h1 id='introduction'>Introduction</h1>
+<p>Documentation for packages created for ECMS system</p>
 
-<p><br/></p>
-<h2 id='table-of-contents'><strong>Table of contents</strong></h2>
-<ol>
-<li><a href="#intro">Intro</a></li>
-<li><a href="#project-setup">Project setup</a></li>
-<li><a href="#project-structure">Project structure</a></li>
-<li><a href="#libraries">Libraries</a></li>
-<li><del>Components</del> <em>(WIP)</em></li>
-<li><a href="#best-practices">Best practices</a></li>
-<li><a href="#technical-debts">Technical debts</a></li>
-</ol>
-<h2 id='intro'><strong>Intro</strong> <span id="intro"></span></h2>
-<p>This project relates to the CMS only, and is built with Vue.js V3 and Vite, you can find more details in <a href="#libraries">Libraries section</a>.</p>
-<h2 id='project-setup'><strong>Project setup</strong> <span id="project-setup"></span></h2>
-<blockquote>
-<p>For local environment variables, create <code>.env.[mode].local</code> files e.g. <code>.env.development.local</code> or <code>.env.local</code></p>
-</blockquote>
-<div class="highlight"><pre class="highlight shell"><code>npm <span class="nb">install</span>
-</code></pre></div>
-<blockquote>
-<p><span style="color: tomato">* Please remember to run the above command <strong>after pulling changes from develop</strong> branch</span></p>
-</blockquote>
-<h3 id='development-server-with-hot-reloads'><strong>Development server</strong> with hot-reloads</h3><div class="highlight"><pre class="highlight shell"><code>npm run dev
-</code></pre></div>
-<p>The app will work using environment variables declared on <code>.env</code> and <code>.env.development</code> files.</p>
-
-<p><br/></p>
-<h3 id='pre-production-build-compile-and-minify'><strong>Pre-production build</strong> (compile and minify)</h3><div class="highlight"><pre class="highlight shell"><code>npm run build:pre
-</code></pre></div>
-<p>The app will work using environment variables declared on <code>.env</code> and <code>.env.pre</code>.</p>
-<h3 id='production-build-compile-and-minify'><strong>Production build</strong> (compile and minify)</h3><div class="highlight"><pre class="highlight shell"><code>npm run build
-</code></pre></div>
-<p>The app will work using environment variables declared on <code>.env</code> and <code>.env.production</code>.</p>
-<h3 id='locally-preview-production-and-pre-prod-builds'>Locally preview production and pre-prod builds</h3><div class="highlight"><pre class="highlight shell"><code>npm run serve
-</code></pre></div><h3 id='lints-and-fixes-files'>Lints and fixes files</h3><div class="highlight"><pre class="highlight shell"><code>npm run lint
-</code></pre></div><h2 id='project-structure'><strong>Project structure</strong> <span id="project-structure"></span></h2>
-<p>Only relevant folders and files will be described in this section, this is because <strong>project structure and code should be self-explanatory</strong></p>
-<div class="highlight"><pre class="highlight shell"><code>/.vscode  <span class="c"># Global vscode settings and useful snippets</span>
-/dist  <span class="c"># Production/Pre-production build files</span>
-/node_modules <span class="c"># Installed packages</span>
-/public <span class="c"># Static assets</span>
-/src  <span class="c"># Main project folder</span>
-  /assets <span class="c"># Images, videos, fonts, etc</span>
-  /components <span class="c"># Reusable Vue components</span>
-  /layouts  <span class="c"># Vue components for layouts</span>
-  /lib  <span class="c"># Javascript assets such as composables, custom validations, etc</span>
-  /locales  <span class="c"># JSON files for translations (1 file per language)</span>
-  /router <span class="c"># Vue router modules</span>
-  /store  <span class="c"># Vuex modules</span>
-  /styles <span class="c"># Scss styles</span>
-  /views  <span class="c"># Vue components for views</span>
-  App.vue <span class="c"># Vue app main template</span>
-  i18n.js <span class="c"># Constructor for vue i18n plugin</span>
-  main.js <span class="c"># Vue app constructor</span>
-.env  <span class="c"># Default environment variables</span>
-.env.pre  <span class="c"># Pre-production environment variables</span>
-.env.prod <span class="c"># Production environment variables</span>
-.eslintrc.js  <span class="c"># Eslint config file</span>
-.gitignore  <span class="c"># Git ignore files and folders</span>
-.lintstagedrc.js  <span class="c"># Commands to run before git commit</span>
-.simple-git-hooks.js  <span class="c"># git hooks enabler</span>
-.jest.config.js <span class="c"># Jest unit tests config file</span>
-jsconfig.json <span class="c"># Javascript config file</span>
-package.json  <span class="c"># File containing project's installed libraries</span>
-README.md <span class="c"># You are here 🚩</span>
-vite.config.js <span class="c"># Vite config file</span>
-</code></pre></div>
-<blockquote>
-<h3 id='how-layouts-views-components-should-work'><strong>How layouts/views/components should work</strong></h3>
-<p>layout &gt; views &gt; components</p>
-</blockquote>
-<h2 id='libraries'><strong>Libraries</strong> <span id="libraries"></span></h2>
-<table><thead>
-<tr>
-<th>Library</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><a href="https://v3.vuejs.org/">Vue v3</a></td>
-<td>Project&#39;s framework</td>
-</tr>
-<tr>
-<td><a href="https://vitejs.dev/">Vite v2</a></td>
-<td>Build tool</td>
-</tr>
-<tr>
-<td><a href="https://next.vuex.vuejs.org/">Vuex</a></td>
-<td>App&#39;s global state management library</td>
-</tr>
-<tr>
-<td><a href="https://next.router.vuejs.org/">Vue Router</a></td>
-<td>App&#39;s routing library</td>
-</tr>
-<tr>
-<td><a href="https://sass-lang.com/">Sass</a></td>
-<td>SCSS styling</td>
-</tr>
-<tr>
-<td><a href="https://axios-http.com/">Axios</a></td>
-<td>Promised based HTTP client</td>
-</tr>
-<tr>
-<td><a href="https://moment.github.io/luxon/">Luxon</a></td>
-<td>DateTime handler</td>
-</tr>
-<tr>
-<td><a href="https://vue-i18n.intlify.dev/introduction.html">Vue i18n</a></td>
-<td>Localization</td>
-</tr>
-<tr>
-<td><a href="https://eslint.org/">Eslint</a></td>
-<td>Coding rules</td>
-</tr>
-<tr>
-<td><a href="https://jestjs.io/">Jest</a></td>
-<td>Testing framework</td>
-</tr>
-<tr>
-<td><a href="https://github.com/okonet/lint-staged">lint-staged</a></td>
-<td>Run commads on staged git files</td>
-</tr>
-<tr>
-<td><a href="https://github.com/toplenboren/simple-git-hooks">simple-git-hooks</a></td>
-<td>Manages git hooks in all platforms. Works with <code>simple-git-hooks</code></td>
-</tr>
-</tbody></table>
-<h2 id='best-practices'><strong>Best Practices</strong> <span id="best-practices"></span></h2>
 <ul>
-<li>On any front-end framework, learn the <a href="https://v3.vuejs.org/guide/instance.html#lifecycle-hooks">lifecycle hooks</a> and how to use them.</li>
-<li><strong>Use functional programming</strong>. It feels more natural in Javascript, go ask <a href="https://reactjs.org/docs/hooks-intro.html#classes-confuse-both-people-and-machines">Facebook and the React team</a>.</li>
-<li>Use EcmaScript&#39;s latest features.</li>
-<li>Project structure and code must be self-explanatory.</li>
-<li>Avoid <a href="https://www.google.com/search?q=code+smells+javascript">code smells</a>.</li>
-<li>DRY (Don&#39;t Repeat Yourself).</li>
-<li>KISS (Keep It Simple, S...).</li>
-<li>Nested <code>if</code> / <code>if else</code> are not allowed.</li>
-<li><code>!important</code> is not allowed.</li>
-<li>&lt;br /&gt; not allowed.</li>
+<li><a href="#database-package">Database</a></li>
+<li><a href="#utils-package">Utils</a></li>
 </ul>
-<h2 id='technical-debts'><strong>Technical Debts</strong> <span id="technical-debts"></span></h2><h3 id='unit-testing'><strong>Unit testing</strong></h3>
-<p>By the moment of writing Jest is configured but there are no tests written for components.</p>
-<h3 id='pwa'><strong>PWA</strong></h3>
-<p>There are <a href="https://github.com/antfu/vite-plugin-pwa">plugins available</a> for enabling PWA. This is important as it will enable poweful features, such as:
-* Service workers with offline support
-* Prompt for new content refreshing
-* Automatic reload when new content available
-* Site installer for mobiles</p>
 <h1 id='database-package'>Database package</h1>
 <p>ECMS package to centralize database project models</p>
 <h3 id='enviroment'>Enviroment</h3>
