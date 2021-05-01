@@ -1,5 +1,5 @@
 ---
-title: API Reference A
+title: Admin GTS
 
 toc_footers:
   - copyright <a href="https://www.ggtech.global" target="_blank">GGTech</a> 2021 ©
@@ -18,4 +18,5 @@ code_clipboard: true
 ---
 
 # Introduction
+
 

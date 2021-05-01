@@ -32,18 +32,18 @@ yarn dev # this run the commands when files change
 > Paths
 
 ```dotenvtxt
-- src
+- /src
   |- index.ts // Main file to initialize databases
-  |- addons
+  |- /addons
       |- <modules> // Declare addons methods and interfaces or enums
-  |- bootstrap
+  |- /bootstrap
     |- <admin | project>
       |- <module> // Declare bootstrap to basic db data
-  |- imports
+  |- /imports
     |- <admin | project> // Import schemas to create models in databases
-  |- models
-    |- <admin | project>
-      |- <Model>
+  |- /models
+    |- /<admin | project>
+      |- /<Model>
         |- index.ts // Declare main interface and schema
         |- statics.ts // Declare model statics methods
         |- methods.ts // Declare schema methods
