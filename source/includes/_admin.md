@@ -9,7 +9,6 @@ Checkout **[project structure](#project-structure)**, **[libraries](#libraries)*
 
 ## **Table of contents**
 1. [Intro](#intro)
-2. [Team](#team)
 3. [Project setup](#project-setup)
 4. [Project structure](#project-structure)
 5. [Libraries](#libraries)
@@ -23,24 +22,6 @@ Checkout **[project structure](#project-structure)**, **[libraries](#libraries)*
 ## **Intro** <span id="intro"></span>
 ---
 This project relates to the CMS only, and is built with Vue.js V3 and Vite, you can find more details in [Libraries section](#libraries).
-
-<br/><br/>
-
-
-## **Team** <span id="team"></span>
----
-If something is not clear, missing and/or need help, please contact us:
-#### Front-end
-- [Mar](#) (Designer)
-- [Hopper](#) (Web designer)
-- [Kheops](#) (Front-end developer)
-#### Back-end
-- [Sebastian](#)
-- [Osiris](#)
-#### Dev-ops
-- [Emilio](#)
-#### Project Management
-- [Adrian](#)
 
 <br/><br/>
 
